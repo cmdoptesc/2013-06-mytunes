@@ -6,6 +6,15 @@ var SongQueue = Songs.extend({
         this.playFirst();
       }
     });
+    this.on('ended', function() {
+      this.shift();
+      if (this.length > 0) {
+        this.playFirst();
+      }
+    });
+    this.on('dequeued', function(song){
+      this.remove(song);
+    });
   },
 
   playFirst: function(){
