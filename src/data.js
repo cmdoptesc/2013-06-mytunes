@@ -18,5 +18,10 @@ var songData = [
     url: "mp3s/04 One In A Million.mp3",
     title: "One In A Million",
     artist: "Aaliyah"
+  },
+  {
+    url: "mp3s/03 Age Ain't Nothing But A Number.mp3",
+    title: "Age Ain't Nothing But A Number",
+    artist: "Al"
   }
 ];
